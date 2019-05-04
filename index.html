@@ -7,29 +7,30 @@
 </head>
 <body>
 <div class="wrap">
-  <h1>Welcome to my simple JavaScript Quiz</h1>
+  <h1>Witaj w moim prostym JavaScript Quiz</h1>
 
     <div id="output">
       <h2>Oto mój pierwszy quiz stworzony w DOM</h2>
+
         <div class="question">
           <h3>Pytanie nr 1</h3>
           <p>Czy trawa jest zielona?</p>
           <label for="input-answer">Twoja odpowiedź:</label>
-            <input type="text" class="input-answer" placeholder="Tak lub Nie">  
+            <input type="text" class="correct input-answer" placeholder="Tak lub Nie">  
         </div>
 
         <div class="question" style="display:none">
           <h3>Pytanie nr 2</h3>
           <p>Jak się nazywa język, za którego pomocą określimy wygląd strony?</p>
           <label for="input-answer">Twoja odpowiedź:</label>
-            <input type="text" class="input-answer" placeholder="HTML, CSS czy Python?">  
+            <input type="text" class="correct input-answer" placeholder="HTML, CSS czy Python?">  
         </div>
 
         <div class="question" style="display:none">
             <h3>Pytanie nr 3</h3>
             <p>Czy jest to quiz stworzony w DOM?</p>
             <label for="answer">Twoja odpowiedź:</label>
-              <input type="text" id="answer" class="input-answer" placeholder="Tak lub Nie">  
+              <input type="text" id="answer" class="correct input-answer" placeholder="Tak lub Nie">  
         </div>
 
         <div class="question" id="moreAnswers" style="display:none">
@@ -38,23 +39,23 @@
             <label for="input-answer" style="display:block" >Twoja odpowiedź:</label>
           
 
-              <input type="radio" id="answer1" class="input-answer" value="wrong" name="odp"><label for="answer1" class="box">
+              <input type="radio" id="answer1" class="input-answer" value="wrong" name="question4"><label for="answer1" class="box">
                 <cite>for i = 0; i < 4; i++ {
                   document.write;
                  }  
                 </cite></label><br>
             
-              <input type="radio" id="answer2" class="input-answer" value="wrong" name="odp"><label for="answer2" class="box">
+              <input type="radio" id="answer2" class="input-answer" value="wrong" name="question4"><label for="answer2" class="box">
                 <cite>for i = 0; i < 4; i++ {
                 document.write;
                }  
               </cite></label><br>
-              <input type="radio" id="answer3" class="input-answer" value="good" name="odp"><label for="answer3" class="box">
+              <input type="radio" id="answer3" class="correct input-answer" value="good" name="question4"><label for="answer3" class="box">
                   <cite>for i = 0; i < 4; i++ {
                     document.write;
                    }  
                   </cite></label><br>
-              <input type="radio" id="answer4" class="input-answer" value="wrong" name="odp"><label for="answer4" class="box">
+              <input type="radio" id="answer4" class="input-answer" value="wrong" name="question4"><label for="answer4" class="box">
                   <cite>for i = 0; i < 4; i++ {
                     document.write;
                    }  

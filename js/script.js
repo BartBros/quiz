@@ -29,8 +29,19 @@ function checkAnswers() {
 
 button.addEventListener('click', () => {
     if (q == 3) { // Last Question
-        userAnswers.push( input[q].value );
-        button.style.display = 'none';
+        //if (document.getElementById('answer3').checked ) {userAnswers.push('dziala kurwa');}
+       // userAnswers.push( input[q].value );
+
+       var radios = document.getElementsByName('question4');
+
+       for (var i = 0, length = radios.length; i < length; i++) {
+            if (radios[i].checked) {
+            userAnswers.push(radios[i].value);
+            break;
+            } 
+        }
+
+        button.style.display = 'none';  // Hide button when last question
         questions[q].style.display = 'none';
         final.style.display = 'block';
         checkAnswers();
