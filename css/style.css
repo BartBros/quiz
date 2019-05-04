@@ -69,3 +69,16 @@ button {
   padding: 0.3em 0.5em;
 }
 
+
+
+#correct_answers {
+  color: green;
+  border-top: 1px solid rgb(161, 161, 161);
+
+}
+
+#wrong_answers {
+  color: red;
+  border-top: 1px solid rgb(161, 161, 161);
+
+}
