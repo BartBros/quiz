@@ -23,7 +23,7 @@ let q = 0;
 // Answers check
 function checkAnswers() {
     for (let i = 0; i < questionsText.length; i += 1) {
-        if (correctAnswers[i] === userAnswers[i]) {
+        if (correctAnswers[i] === userAnswers[i]) { 
             finalMessageGood += '<p>' + questionsText[i] + '</p>';
             userAnswersCorrect.push(questionsText[i]);
         }   else {
